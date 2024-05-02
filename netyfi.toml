@@ -1,0 +1,3 @@
+[build]
+  base = "your/base/directory"
+  command = "xcopy your\\base\\directory\\* build\\ /s /e"
