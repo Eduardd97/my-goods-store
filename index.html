@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <section>
+            <a href="#" class="navigator-link" data-redirect="catalog">Catalog</a>
+            <span>||</span>
+            <a href="#" class="navigator-link" data-redirect="cart">Cart</a>
+        </section>
+        <section class="grocery-cart-quantity">
+            <img class="grocery-cart-img navigator-link" data-redirect="cart" src="./image/shopping-cart-svgrepo-com.svg" alt="">
+            <span id="number-of-goods" class="number-of-products navigator-link" data-redirect="cart">18</span>
+        </section>
+    </header>
+
+    <main>
+        <div class="view" data-view="catalog">
+            <h1>Catalog</h1>
+
+            <div class="cards-wrraper" id="catalog-items"></div>
+        </div>
+
+        <div class="view" data-view="cart">
+            <div class="cart-header">
+                <h1>Cart</h1>
+                <button id="buy-all-btn">Buy all for: </button>
+            </div>
+
+            <div class="cards-wrraper" id="cart-items"></div>
+        </div>
+    </main>
+
+    <!-- <footer></footer> -->
+    
+    <script src="./Js/api.js"></script>
+    <script src="./Js/navigation.js"></script>
+    <script src="./Js/main.js"></script>
+</body>
+</html>
