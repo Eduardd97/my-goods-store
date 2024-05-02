@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    background: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+header a {
+    font-size: 25px;
+    color: white;
+    outline: none;
+    text-decoration: none;
+}
+
+header span {
+    font-size: 30px;
+}
+
+.view {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.cards-wrraper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cards-wrraper .item-card {
+    width: 400px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 0.4px grey;
+    cursor: pointer;
+}
+
+.cards-wrraper .item-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.cards-wrraper .item-card article {
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+
+.cards-wrraper .item-card button {
+    width: 40%;
+    border-radius: 15px;
+    border: none;
+    background: lightseagreen;
+    cursor: pointer;
+    padding: 7px 10px;
+    color: white;
+}
